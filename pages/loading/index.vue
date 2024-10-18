@@ -1,7 +1,7 @@
 <template>
   <view class="mask" @click="stopLoading">
     <view @click.stop="" :class="['loading', showLoading ? 'show' : '']">
-      <image src="../../static/loading2.gif" style="width: 100rpx; height: 100rpx; margin: 25rpx"></image>
+      <image :src="loadingSrc" style="width: 100rpx; height: 100rpx; margin: 25rpx"></image>
     </view>
   </view>
 </template>
@@ -10,10 +10,16 @@
 import { ref } from 'vue';
 import { onLoad } from '@dcloudio/uni-app';
 onLoad((option) => {
-  console.log(1111, option);
+  console.log(1111, option.params);
+  if (option?.params == '1') {
+    loadingSrc = 'https://oss.huizustore.com/e6ec8c4d502b43d7b105653652a362fa.gif';
+  } else {
+    loadingSrc = option?.params;
+  }
   showLoading.value = true;
 });
 let showLoading = ref(false);
+let loadingSrc = ref();
 function stopLoading() {
   setTimeout(() => {
     uni.navigateBack();

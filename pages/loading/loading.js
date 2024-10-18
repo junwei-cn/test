@@ -2,7 +2,7 @@ const install = app => {
   app.config.globalProperties.$loading = {
     show(params) {
       uni.navigateTo({
-        url: `/pages/loading/index?params=${params}`,
+        url: `/pages/loading/index?params=${params.src}`,
         events: {
           confirm: function(data) {
             params?.confirm?.(data);

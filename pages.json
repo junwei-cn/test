@@ -37,18 +37,32 @@
       "style": {
         "navigationBarTitleText": "canvas"
       }
-    },
+    }
   ],
   "tabBar": {
     "list": [{
-        "selectedIconPath": "static/home-active.png",
-        "iconPath": "static/home.png",
-        "pagePath": "pages/news/index"
+        "selectedIconPath": "static/tabBar/tab1_1.png",
+        "iconPath": "static/tabBar/tab1.png",
+        "pagePath": "pages/news/index",
+        "text": "首页"
       },
       {
-        "selectedIconPath": "static/loading.gif",
-        "iconPath": "static/app-icon.png",
-        "pagePath": "pages/test/index"
+        "selectedIconPath": "static/tabBar/tab2_2.png",
+        "iconPath": "static/tabBar/tab2.png",
+        "pagePath": "pages/test/index",
+        "text": "loading"
+      },
+      {
+        "selectedIconPath": "static/tabBar/tab3_3.png",
+        "iconPath": "static/tabBar/tab3.png",
+        "pagePath": "pages/test/index",
+        "text": "canvas"
+      },
+      {
+        "selectedIconPath": "static/tabBar/tab4_4.png",
+        "iconPath": "static/tabBar/tab4.png",
+        "pagePath": "pages/test/index",
+        "text": "未知"
       }
     ]
   },
