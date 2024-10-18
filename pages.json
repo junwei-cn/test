@@ -1,0 +1,70 @@
+{
+  "pages": [{
+      "path": "pages/news/index",
+      "style": {
+        "navigationBarTitleText": "首页"
+      }
+    },
+    {
+      "path": "pages/news/detail",
+      "style": {
+        "app-plus": {
+          "titleNView": {
+            "type": "transparent"
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/loading/index",
+      "style": {
+        "navigationBarTitleText": "加载",
+        "titleImage": "static/neon.jpg",
+        "navigationStyle": "custom",
+        "app-plus": {
+          "background": "transparent"
+        }
+      }
+    },
+    {
+      "path": "pages/test/index",
+      "style": {
+        "navigationBarTitleText": "测试"
+      }
+    },
+    {
+      "path": "pages/canvas/index",
+      "style": {
+        "navigationBarTitleText": "canvas"
+      }
+    },
+  ],
+  "tabBar": {
+    "list": [{
+        "selectedIconPath": "static/home-active.png",
+        "iconPath": "static/home.png",
+        "pagePath": "pages/news/index"
+      },
+      {
+        "selectedIconPath": "static/loading.gif",
+        "iconPath": "static/app-icon.png",
+        "pagePath": "pages/test/index"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "新闻资讯",
+    "navigationBarBackgroundColor": "#2F85FC",
+    "backgroundColor": "#FFFFFF"
+  },
+  "rightWindow": {
+    "path": "responsive/right-window.vue",
+    "style": {
+      "width": "calc(100vw - 450px)"
+    },
+    "matchMedia": {
+      "minWidth": 768
+    }
+  }
+}
